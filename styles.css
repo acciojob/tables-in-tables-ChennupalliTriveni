@@ -1,26 +1,50 @@
-table, th, td {
+/* Main Table Styling */
+.main-table {
+  width: 100%;
+  height: 100%;
   border: 2px solid black;
   border-collapse: collapse;
   text-align: center;
+}
+
+/* Nested Tables */
+.nested-table {
+  width: 100%;
+  height: 100%;
+  border: 2px solid black;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+/* Borders for all cells */
+.main-table td,
+.nested-table td,
+.nested-table th {
+  border: 2px solid black;
   padding: 5px;
 }
 
-th {
+/* Header styling */
+.nested-table th {
   font-weight: bold;
 }
 
-.black-bg {
+/* Black background for Table 4 cell */
+.black-cell {
   background-color: black;
   color: white;
 }
 
+/* Link styling */
 a {
   color: purple;
   text-decoration: underline;
 }
 
+/* List styling */
 ul {
   list-style-type: disc;
+  text-align: left;
+  padding-left: 25px;
   margin: 0;
-  padding-left: 20px;
 }
